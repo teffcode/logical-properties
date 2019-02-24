@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  blockquote {
+    text-align: start; /* left in latin, right in arabic */
+    margin-inline-start: 0px; /* margin-left in latin, margin-right in arabic */
+    border-inline-start: 5px solid gray; /* border-left in latin, border-right in arabic */
+    padding-inline-start: 5px; /* padding-left in latin, padding-right in arabic */
+  }
+  .title-h-tb {
+    color: yellow;
+    writing-mode: horizontal-tb;
+  }
+  .title-v-lr {
+    color: blue;
+    writing-mode: vertical-lr;
+  }
+  .title-v-rl {
+    color: red;
+    writing-mode: vertical-rl;
+  }
+</style>
+<body>
+  <blockquote dir="auto">Quotation in English</blockquote>
+  <blockquote dir="auto">اقتباس في العربية</blockquote>
+  <h1 class="title-h-tb">HORIZONTAL <br> TOP TO BOTTOM</h1>
+  <h1 class="title-v-lr">VERTICAL <br> LEFT TO RIGHT</h1>
+  <h1 class="title-v-rl">VERTICAL <br> RIGHT TO LEFT</h1>
+</body>
+</html>
