@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  .controls {
+    background-color: rgba(0,0,0,.1);
+    padding: 10px;
+    border-radius: .5em;
+    border: 1px solid rgba(0,0,0,.2);
+    margin: 0 0 2em 0
+  }
+  .controls select {
+    font-size: .9em;
+  }
+  .logical_border {
+    border-block-start: 2px solid pink;
+    border-block-end: 2px solid yellow;
+    border-inline-start: 2px solid red;
+    border-inline-end: 2px solid green;
+    width: 100px;
+    height: 100px;
+  }
+  #container {
+    writing-mode: horizontal-tb;
+    /* writing-mode: vertical-lr; */
+    /* writing-mode: vertical-rl; */
+  }
+</style>
+<script>
+  // var writingMode = document.getElementById("writingMode");
+  // writingMode.addEventListener("change", function (evt) {
+  //   document.getElementById("container").style.writingMode = evt.target.value;
+  // });
+</script>
+<body>
+  <!-- <div class="controls">
+    <select id="writingMode">
+      <option value="horizontal-tb">horizontal-tb</option>
+      <option value="vertical-lr">vertical-lr</option>
+      <option value="vertical-rl">vertical-rl</option>
+    </select>
+  </div> -->
+  <div id="container">
+    <div class="logical_border"></div>
+  </div>
+</body>
+</html>
